@@ -1,6 +1,8 @@
 //import de.johoop.jacoco4sbt._
 //import JacocoPlugin._
 
+//no mean
+
 name := "rdf2-di"
 
 description := "Rough Diamond Framework DI Container"
