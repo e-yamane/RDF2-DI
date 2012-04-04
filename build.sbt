@@ -13,4 +13,3 @@ libraryDependencies +=  "org.slf4j"             %   "jcl-over-slf4j"    % "1.6.2
 
 libraryDependencies +=  "junit"                 %   "junit"             % "4.10"    % "test"
 
-seq(rdf.settings : _*)

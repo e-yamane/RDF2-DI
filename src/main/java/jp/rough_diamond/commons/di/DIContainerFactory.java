@@ -35,7 +35,8 @@ public class DIContainerFactory {
 	synchronized public static DIContainer getDIContainer() {
 		if(instance == null) {
 			try {
-				instance = (DIContainer)Class.forName(DEFAULT_DI_CONTAINER).newInstance();
+				instance = (DIContainer)Thread.currentThread(
+						).getContextClassLoader().loadClass(DEFAULT_DI_CONTAINER).newInstance();
 			} catch (Exception e) {
 				log.warn(e.getMessage(), e);
 				throw new RuntimeException(e);
